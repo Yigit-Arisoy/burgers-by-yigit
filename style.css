@@ -6,7 +6,7 @@ html{
 body{
     font-family: Montserrat;
     color: aliceblue;
-    background-color: rgba(0, 0, 0, 0.90);
+    background-color: #151410
 }
 
 #intro-message a{
@@ -39,11 +39,18 @@ text-shadow:
     background-image: url("./images/background2.jpg");
     background-size: cover;
     position: absolute;
- 
-
     z-index: -1;
     min-width: 100%;
     min-height: 80%;
+}
+
+#background3{
+    background-image: url("./images/background5.jpg");
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 350%;
 }
 
 #title{
@@ -77,8 +84,9 @@ text-shadow:
 #burger-tips{
     margin-left: 100px;
     margin-top: 100px;
+    margin-bottom: 0;
     padding-top: 100px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     max-width: 1000px;
 }
 
@@ -124,6 +132,88 @@ text-shadow:
 
 #recipes{
     color: beige;
+}
+
+.recipe{
+    display: grid;
+    grid-template-columns: 0.5fr 0.3fr 1fr;
+    grid-template-rows: 0.1fr 0.3fr .3fr;
+    font-size: 1.2rem;
+    margin-left: 100px;
+    margin-top: 100px;
+    max-width: 1800px;
+    grid-gap: 0;
+}
+
+.recipe-title{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #F2A72F;
+    margin-bottom: 50px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.recipe-desc{
+    border-image: linear-gradient(to right bottom, rgba(242,167,47,1) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, rgba(242,167,47,1) 100%) 1;
+    border-image-width: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-height: 350px;
+
+}
+
+.recipe img{
+    max-width: 420px;
+    margin: 0;
+}
+
+.ingredients{
+    margin-left: 50px;
+}
+
+.ingredients-title{
+    color: #f2e52f;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.directions
+{
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    align-items: center;
+}
+
+.directions ul{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.directions-ul-number{
+    color: #f2e52f; 
+    display: inline; 
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.directions-title{
+    color: #f2e52f;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 30px;
+}
+
+.directions ul li{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-width: 500px;
 }
 
 #cheddar{
@@ -242,41 +332,12 @@ text-shadow:
 }
 
 
-.recipe{
-    font-size: 1.4rem;
-    margin-left: 100px;
-    margin-top: 100px;
-    max-width: 1200px;
-}
+.footer{
 
-.recipe-title{
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #F2A72F;
-    margin-bottom: 50px;
-}
-
-.recipe img{
-    max-width: 300px;
-    float: left;
-    margin-right: 50px;
-}
-
-.ingredients-title{
-    color: #f2e52f;
-    font-size: 2rem;
-    font-weight: 800;
     margin-top: 150px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #F2A72F;
 }
 
-.directions-title{
-    color: #f2e52f;
-    font-size: 2rem;
-    font-weight: 800;
-    margin-top: 30px;
-}
-
-ol li{
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
