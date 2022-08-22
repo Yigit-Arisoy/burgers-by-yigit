@@ -1,0 +1,51 @@
+body{
+    font-family: Montserrat;
+    color: aliceblue;
+    background-color: black;
+
+}
+
+a{
+    text-decoration: none;
+    color: #B26E2B;
+    transition: all 0.2s ease-in-out;
+}
+a:hover{
+color:  #b19a18;
+}
+
+#background{
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#intro{
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+#navbar{
+
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+}
+
+#intro-message{
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+#recipe-scroll-button{
+    display: inline-block;
+    max-width: 300px;
+    text-align: center;
+    margin-left: 50px;
+}
