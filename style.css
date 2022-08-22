@@ -184,6 +184,7 @@ text-shadow:
     grid-column-start: 1;
     grid-column-end: 4;
     align-items: center;
+    max-width: 1600px;
 }
 
 .directions ul{
