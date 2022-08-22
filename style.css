@@ -1,19 +1,20 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
     font-family: Montserrat;
     color: aliceblue;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.90);
 }
 
-a{
+#intro-message a{
     text-decoration: none;
     color: #B26E2B;
     transition: all 0.2s ease-in-out;
 }
-a:hover{
+#intro-message a:hover{
 color:  #b19a18;
 text-shadow: 
 0 0 6px #641F01,
@@ -34,6 +35,17 @@ text-shadow:
     min-height: 100%;
 }
 
+#background2{
+    background-image: url("./images/background2.jpg");
+    background-size: cover;
+    position: absolute;
+ 
+
+    z-index: -1;
+    min-width: 100%;
+    min-height: 80%;
+}
+
 #title{
     color: #F2A72F;
 }
@@ -44,6 +56,7 @@ text-shadow:
     font-size: 2rem;
     margin-left: 2rem;
     margin-top: 2rem;
+    margin-bottom: 0;
 }
 
 #navbar{
@@ -61,12 +74,173 @@ text-shadow:
     margin-left: 100px;
 }
 
+#burger-tips{
+    margin-left: 100px;
+    margin-top: 100px;
+    padding-top: 100px;
+    font-size: 1.5rem;
+    max-width: 1000px;
+}
+
+#quote{
+    font-style: italic;
+    color: beige;
+    font-size: 1.2rem;
+}
+
 #recipe-scroll-button{
     display: inline-block;
     max-width: 300px;
     text-align: center;
     margin-left: 100px;
 }
+
+#recipes-menu-title{
+    text-align: center;
+    font-size: 2rem;
+    color: #F2A72F;
+    margin-top: 50px;
+}
+
+#recipes-menu{
+    text-align: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 960px;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 50px 0 50px 0;
+}
+
+#recipes-menu a{
+    max-width: 300px;
+    text-align: center;
+}
+
+#burger-tips{
+    margin-bottom: 200px;
+}
+
+#recipes{
+    color: beige;
+}
+
+#cheddar{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    color:#F2A72F;
+    font-weight: 800;
+}
+
+#cheddar-img{
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+#cheddar-desc{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.75);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: all 0.2s ease;
+    text-align: center;
+    align-items: center;
+}
+
+#cheddar:hover #cheddar-desc{
+    height: 100%;
+}
+
+/* ------- */
+
+#mexican{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    color:#F2A72F;
+    font-weight: 800;
+}
+
+#mexican-img{
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+#mexican-desc{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.75);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: all 0.2s ease;
+    text-align: center;
+    align-items: center;
+}
+
+#mexican:hover #mexican-desc{
+    height: 100%;
+}
+
+/* ------ */
+
+#fws{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    color:#F2A72F;
+    font-weight: 800;
+}
+
+#fws-img{
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+#fws-desc{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.75);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: all 0.2s ease;
+    text-align: center;
+    align-items: center;
+}
+
+#fws:hover #fws-desc{
+    height: 100%;
+}
+
 
 .recipe{
     font-size: 1.4rem;
